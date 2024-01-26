@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "projectName": "Sabor Mexicano",
+        "projectDescription": "MERN Stack, GraphQL",
+        "img": "/img/SaborMexicano.png",
+        "imgAlt": "Food Main Menu.",
+        "repoLink": "https://github.com/JakeHowdeshell/react-menu?tab=readme-ov-file",
+        "deployed": "https://sabor-mexicano-aded3d6892cd.herokuapp.com/"
+    }
+    ,{
+        "id": 2,
+        "projectName": "Venue Viewer",
+        "projectDescription": "Node.js, MySQL, Handlebars.js, Tailwind CSS.",
+        "img": "/img/Login.png",
+        "imgAlt": "Sign in page for Venue Viewer application.",
+        "repoLink": "https://github.com/ChaseOstien/Venue-Viewer",
+        "deployed": "https://venue-viewer-team1-69164e361419.herokuapp.com/login"
+    },
+    {
+        "id": 3,
+        "projectName": "Tech Blog",
+        "projectDescription": "MVC, Handlebars.js, Sequelize, Express-session.",
+        "img": "/img/TechBlog.png",
+        "imgAlt": "Sign in page for Tech Blog application.",
+        "repoLink": "https://github.com/ChaseOstien/Tech_Blog",
+        "deployed": "https://tech-blog-12-2c4e0baa09b6.herokuapp.com/"
+    },
+    {
+        "id": 4,
+        "projectName": "E-Commerce-Backend",
+        "projectDescription": "Express.js, Sequelize, MongoDB, Mongoose.",
+        "img": "/img/EcommerceExample.png",
+        "imgAlt": "JSON response data for E Commerce routes.",
+        "repoLink": "https://github.com/ChaseOstien/E-Commerce-BackEnd"
+    },
+    {
+        "id": 5,
+        "projectName": "Content Manager",
+        "projectDescription": "Node.js, Inquirer, MySQL.",
+        "img": "/img/Content_manager1.png",
+        "imgAlt": "Example of command line prompts for this application.",
+        "repoLink": "https://github.com/ChaseOstien/Content_Manager"
+    },
+    {
+        "id": 6,
+        "projectName": "Just Another Text Editor",
+        "projectDescription": "PWA, IndexDB, WebPack, Local Storage.",
+        "img": "/img/JATEscreenshot.png",
+        "imgAlt": "Text Editor Home Screen.",
+        "repoLink": "https://github.com/ChaseOstien/PWA-TextEditor",
+        "deployed": "https://j-a-t-e-p-w-a-25155f7ea5a4.herokuapp.com/"
+    },
+    {
+        "id": 7,
+        "projectName": "Note Taker",
+        "projectDescription": "Node.js, Express.js, JavaScript.",
+        "img": "/img/Screenshot11.png",
+        "imgAlt": "Homepage for Note Taker application.",
+        "repoLink": "https://github.com/ChaseOstien/Note_Taker",
+        "deployed": "https://note-taker-remindme-1dc60909ba4b.herokuapp.com/"
+    },
+    {
+        "id": 8,
+        "projectName": "Cinephile",
+        "projectDescription": "Node.js, Express.js, JavaScript, Bulma.",
+        "img": "/img/CinephileScreenshot.jpeg",
+        "imgAlt": "Homepage for Cinephile application.",
+        "repoLink": "https://github.com/ChaseOstien/Cinephile"
+    },
+    {
+        "id": 9,
+        "projectName": "README Generator",
+        "projectDescription": "Node.js, Inquirer, JavaScript.",
+        "img": "/img/Screenshot1.png",
+        "imgAlt": "CLI prompts for application.",
+        "repoLink": "https://github.com/ChaseOstien/README_Generator"
+    },
+    {
+        "id": 10,
+        "projectName": "Weather Dashboard",
+        "projectDescription": "Node.js, JavaScript, API.",
+        "img": "/img/WeatherDashboard.png",
+        "imgAlt": "Weather Dashboard.",
+        "repoLink": "https://github.com/ChaseOstien/Weather-Dashboard"
+    }
+]
