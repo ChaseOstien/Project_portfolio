@@ -1,4 +1,4 @@
-from app.db import Base
+from db import Base
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import validates
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -24,12 +24,9 @@ class User(Base):
         return check_password_hash(self.password, password)
     
     @validates('username')
-    def validate_username(self, username):
+    def validate_username(self, key, username):
         if not username:
             raise AssertionError('No username provided!')
-        
-        if User.query.filter(User.username == username).first():
-            raise AssertionError('Username already in use!')
         
         if len(username) < 5 or len(username) > 25:
             raise AssertionError('Username must be betweem 5 and 25 characters!')

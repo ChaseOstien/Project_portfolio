@@ -1,5 +1,7 @@
 from flask import Flask
 from app.db import init_db
+from flask_restful import Resource, Api
+from app.api import projects
 
 def create_app(test_config=None):
     app = Flask(__name__, static_url_path='/')
@@ -8,16 +10,10 @@ def create_app(test_config=None):
         SECRET_KEY='dev'
     )
 
-    @app.route('/')
-    def home():
-        return 'Go to /hello'
-
-
-    @app.route('/hello')
-    def hello():
-        return 'Hello, World!'
+    api = Api(app)
     
     init_db(app)
+
+    app.register_blueprint(projects)
     
     return app
-
