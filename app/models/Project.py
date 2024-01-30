@@ -1,4 +1,4 @@
-from app.db import Base
+from db import Base
 from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, select, func
 from sqlalchemy.orm import validates, relationship, column_property
 from datetime import datetime
@@ -11,6 +11,7 @@ class Project(Base):
     project_description = Column(String(100), nullable=False)
     repo_link = Column(String(100), nullable=False)
     deployed = Column(String(100), nullable=True)
+    user_id = Column(Integer, ForeignKey('users.id'))
     created_at = Column(DateTime, default=datetime.now)
     updated_at = Column(DateTime, default=datetime.now, onupdate=datetime.now)
     user = relationship('User')
@@ -22,7 +23,7 @@ class Project(Base):
 
 
     @validates('project_name')
-    def validate_project_name(self, project_name):
+    def validate_project_name(self, key, project_name):
         if not project_name:
             raise AssertionError('No project name provided!')
         
@@ -32,7 +33,7 @@ class Project(Base):
         return project_name
     
     @validates('project_description')
-    def validate_project_description(self, project_description):
+    def validate_project_description(self, key, project_description):
         if not project_description:
             raise AssertionError('No project description provided!')
         

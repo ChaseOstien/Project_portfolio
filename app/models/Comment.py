@@ -1,5 +1,5 @@
 from datetime import datetime
-from app.db import Base
+from db import Base
 from sqlalchemy.orm import validates, relationship
 from sqlalchemy import Column, Integer, String, ForeignKey, DateTime
 
@@ -13,7 +13,7 @@ class Comment(Base):
     user = relationship('User')
 
     @validates('comment_text')
-    def validate_comment_text(self, comment_text):
+    def validate_comment_text(self, key, comment_text):
         if not comment_text:
             raise AssertionError('No comment provided!')
         
